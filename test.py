@@ -7,7 +7,7 @@ query = "Describe the contents of this image in 100 words."
 start_time = time.time()
 
 response = ollama.chat(
-    model="qwen2.5vl:3b",
+    model="gemma3:4b-it-qat",
     messages=[
         {
             "role": "user",
