@@ -4,8 +4,8 @@ import argparse
 
 def main():
     parser = argparse.ArgumentParser(description="Run an Ollama vision-language model with image + query")
-    parser.add_argument("--model", type=str, default="qwen2.5vl:b", help="Model name (default: qwen2.5vl:b)")
-    parser.add_argument("--image", type=str, default="esp32-devkitC-v4-pinout.png", help="Path to input image")
+    parser.add_argument("--model", type=str, default="qwen2.5vl:3b", help="Model name (default: qwen2.5vl:3b)")
+    parser.add_argument("--image", type=str, default="./tasks/esp32-devkitC-v4-pinout.png", help="Path to input image")
     parser.add_argument("--query", type=str, default="Describe the contents of this image in 100 words.", help="Query string for the model")
     args = parser.parse_args()
 
